@@ -1,74 +1,117 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Popins", sans-serif;
-} 
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
 
-.container{
-    width:100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #b7127e,#f48dd1);
-    color: #ffff;
-    padding: 10px;
+
+body{
+    
+    background:black;
 }
-.calculator{
+.card{
+    width: 90%;
+    max-width: 470px;
+
+    background:linear-gradient(135deg,#00feba,#5b548a);
+   color: #fff;
+   margin:100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
     width: 100%;
-    max-width: 600px;
-    margin-left: 10%;
-    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.calculator h1{
-    font-size: 60px;
-    color:black;
+.search input{
+    height: 60px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    flex:1;
+    margin-right: 16px;
+    color: #000;
+    background: #ebfffc;
+    padding: 10px 25px;
+    border-radius: 30px;
 }
-.input-box{
-    margin: 40px 0;
-    padding: 35px;
-    border-radius: 10px;
-    background: rgba(255,255,255, 0.3);
+.search button{
+    width: 60px;
+    height: 60px;
+    border: 0;
+    outline:0 ;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.search button img{
+    width: 16px;
+}
+
+.weather-body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    display: none;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+.col{
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px black;    
+    text-align: left;
 }
-.input-box input{
-   flex:1;
-   margin-right: 20px;
-   padding: 14px 20px;
-   border: 0;
-   outline: 0;
-   font-size: 18px;
-   border-radius: 5px;
-   position: relative;
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+ margin-top: -6px;
+ font-size: 28px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px ;
+    display: none;
+}
 
 
-}
-.input-box button{
-    background:black;
-    border:0;
-    outline: 0;
-    padding: 15px 30px;
-    color:#ffff;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.input-box input::webkit-calendar-picker-indicator{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    position: absolute;
-    background-position: calc(100% -10px );
-    background-size: 30px;
-    cursor: pointer;
-} 
-#result{
-    font-size: 20px;
 
-}
-#result span{
-    color:black;
-}
 
